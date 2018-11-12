@@ -19,7 +19,7 @@ def home(request):
             'title':'Home Page',
             'year':datetime.now().year,
         })
-    )
+    
 
 def contact(request):
     """Renders the contact page."""
@@ -33,7 +33,7 @@ def contact(request):
             'message':'Entre em contato conosco',
             'year':datetime.now().year,
         })
-    )
+    
 
 def about(request):
     """Renders the about page."""
@@ -47,7 +47,7 @@ def about(request):
             'message':'Gerenciador de vestibulares',
             'year':datetime.now().year,
         })
-    )
+    
 
 def cadastro_cursos(request):
     assert isinstance(request, HttpRequest)
@@ -61,7 +61,7 @@ def cadastro_cursos(request):
             'cursos': Curso.objects.all(),
             'year':datetime.now().year,
         })
-    )
+    
             
 def cadastro_vestibulares(request): 
     assert isinstance(request, HttpRequest)
@@ -74,7 +74,7 @@ def cadastro_vestibulares(request):
             'vestibulares': Vestibular.objects.all( ),
             'year':datetime.now().year,
         })
-    )
+    
     
 def inscritos(request):
     assert isinstance(request, HttpRequest)
