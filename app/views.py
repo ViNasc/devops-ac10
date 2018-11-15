@@ -34,60 +34,60 @@ def contact(request):
             'year':datetime.now().year,
         })
     )
-
-def about(request):
-    """Renders the about page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/about.html',
-        context_instance = RequestContext(request,
-        {
-            'title':'About',
-            'message':'Gerenciador de vestibulares',
-            'year':datetime.now().year,
-        })
-   )
+#*/
+#def about(request):
+#    """Renders the about page."""
+#    assert isinstance(request, HttpRequest)
+#    return render(
+#        request,
+#        'app/about.html',
+#        context_instance = RequestContext(request,
+#        {
+#            'title':'About',
+#            'message':'Gerenciador de vestibulares',
+#            'year':datetime.now().year,
+#        })
+#   )
+#    
+#
+#def cadastro_cursos(request):
+#    assert isinstance(request, HttpRequest)
+#    return render(
+#        request,
+#        'app/cadastro_cursos.html',
+#v        context_instance = RequestContext(request,
+#        {
+#            'title':'Cadastro de cursos',
+##            'cursos': ['ADS' , 'SI', 'CC'],
+#            'cursos': Curso.objects.all(),
+#            'year':datetime.now().year,
+#        })
+#    )
+#v            
+#def cadastro_vestibulares(request): 
+#    assert isinstance(request, HttpRequest)
+#    return render(
+ #       request,
+#        'app/cadastro_vestibulares.html', 
+#        context_instance = RequestContext(request,
+#        {
+#            'title':'Cadastro de vestibulares’,
+#            'vestibulares': Vestibular.objects.all( ),
+#            'year':datetime.now().year,
+#        })
+#    )
     
-
-def cadastro_cursos(request):
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/cadastro_cursos.html',
-        context_instance = RequestContext(request,
-        {
-            'title':'Cadastro de cursos',
-#            'cursos': ['ADS' , 'SI', 'CC'],
-            'cursos': Curso.objects.all(),
-            'year':datetime.now().year,
-        })
-    )
-            
-def cadastro_vestibulares(request): 
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/cadastro_vestibulares.html', 
-        context_instance = RequestContext(request,
-        {
-            'title':'Cadastro de vestibulares’,
-            'vestibulares': Vestibular.objects.all( ),
-            'year':datetime.now().year,
-        })
-    )
     
-    
-def inscritos(request):
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/inscritos.html',
-        context_instance = RequestContext(request,
-        {
-            'title':'Inscritos’,
-            'inscritos': Inscritos.objects.all( ),
-            'year':datetime.now().year            
-        })
-    )
-
+#def inscritos(request):
+#    assert isinstance(request, HttpRequest)
+#    return render(
+#        request,
+#        'app/inscritos.html',
+#        context_instance = RequestContext(request,
+#        {
+#            'title':'Inscritos’,
+#            'inscritos': Inscritos.objects.all( ),
+#            'year':datetime.now().year            
+#        })
+#    )
+/*
