@@ -86,7 +86,7 @@ def inscritos(request):
         'app/inscritos.html',
         context_instance = RequestContext(request,
         {
-            'title':'Inscritos’,
+            'title':'Inscritos',
             'inscritos': Inscritos.objects.all( ),
             'year':datetime.now().year            
         })
