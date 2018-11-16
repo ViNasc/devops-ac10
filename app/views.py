@@ -50,7 +50,6 @@ def about(request):
         })
    )
     
-
 def cadastro_cursos(request):
     assert isinstance(request, HttpRequest)
     return render(
@@ -91,4 +90,3 @@ def inscritos(request):
             'year':datetime.now().year            
         })
     )
-
