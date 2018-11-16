@@ -6,15 +6,11 @@
 </div>
 <table class="table">
    <tr><th>
-         <p><font size="2" face="Verdana">
-                  Nome Completo</th></tr>
-         </font></p>
-      {% for nome in inscritos %}
+         Nome Completo</th></tr>
+         {% for nome in inscritos %}
    <tr><td>
-         <p><font size="2" face="Verdana">
-                        {{ inscritos.nome }}
-                  </font></p>
-            </td></tr>
+         {{ inscritos.nome }}
+          </td></tr>
       {% endfor %}
 </table>
 
