@@ -79,7 +79,7 @@ def cadastro_vestibulares(request):
     )
     
     
-def cadastro_inscritos(request):
+def inscritos(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
