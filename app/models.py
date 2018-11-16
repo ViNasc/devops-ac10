@@ -15,4 +15,3 @@ class Vestibular(models.Model):
 
 class Inscritos(models.Model):
     nome = models.CharField(max_length=200)
-
