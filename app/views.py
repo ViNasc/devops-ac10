@@ -34,21 +34,21 @@ def contact(request):
             'year':datetime.now().year,
         })
     )
-#*/
-#def about(request):
-#    """Renders the about page."""
-#    assert isinstance(request, HttpRequest)
-#    return render(
-#        request,
-#        'app/about.html',
-#        context_instance = RequestContext(request,
-#        {
-#            'title':'About',
-#            'message':'Gerenciador de vestibulares',
-#            'year':datetime.now().year,
-#        })
-#   )
-#    
+
+def about(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+       request,
+        'app/about.html',
+        context_instance = RequestContext(request,
+        {
+            'title':'About',
+            'message':'Gerenciador de vestibulares',
+            'year':datetime.now().year,
+        })
+   )
+    
 #
 #def cadastro_cursos(request):
 #    assert isinstance(request, HttpRequest)
