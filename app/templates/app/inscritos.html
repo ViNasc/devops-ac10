@@ -1,4 +1,3 @@
-#-*- coding: utf-8 -*-
 {% extends "app/layout.html"%}
 {% block content %}
 <div class="jumbotron">
@@ -7,7 +6,7 @@
 <table class="table">
    <tr><th>
          Nome Completo</th></tr>
-         {% for nome in inscritos %}
+         {% for inscritos in inscritos %}
    <tr><td>
          {{ inscritos.nome }}
           </td></tr>
